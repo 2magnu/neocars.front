@@ -42,16 +42,23 @@ p {
     position: relative;
     display: inline-flex;
     height: 40px;
-    min-width: 164px;
     align-items: center;
     justify-content: center;
     font-size: 16px;
     font-weight: 500;
     line-height: 1.2;
     color: #ffffff;
+    padding-left: 30px;
+    padding-right: 30px;
     border-radius: 12px;
     outline: 0;
     border: none;
+}
+
+@media (min-width: 768px) {
+    .base-button {
+        min-width: 164px;
+    }
 }
 
 .base-button--outline {
@@ -96,12 +103,6 @@ p {
 
     .base-button--filled:hover:before {
         top: 0;
-    }
-}
-
-@media (max-width: 768px) {
-    .base-button {
-        width: 100%;
     }
 }
 
@@ -207,6 +208,7 @@ p {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 34px;
+    margin-bottom: 34px;
 }
 
 @media (max-width: 768px) {
@@ -306,6 +308,10 @@ p {
         align-items: center;
         gap: 12px;
     }
+
+    .option__button {
+        width: 50%;
+    }
 }
 
 
@@ -313,8 +319,7 @@ p {
 .page-offer-table {
     display: grid;
     grid-template-rows: 1fr;
-    grid-row-gap: 34px;
-    margin-top: 34px;
+    grid-row-gap: 24px;
     margin-bottom: 60px;
 }
 
@@ -330,11 +335,24 @@ p {
     grid-column-gap: 34px;
 }
 
-.page-offer-table__cell:not(:first-child) {
- text-align: center;
+.page-offer-table__cell {
+    display: flex;
+    flex-direction: column;
 }
 
-.page-offer-table__row:first-child .page-offer-table__cell {}
+.page-offer-table__cell:not(:first-child) {
+    align-items: center;
+}
+
+.page-offer-table__divider {
+    width: 100%;
+    height: 1px;
+    background-color: var(--color-light-grey);
+}
+
+.page-offer-table__cell:not(:first-child) .page-offer-table__divider {
+    width: 50%;
+}
 
 .page-offer-table__text {
     font-size: 16px;
@@ -486,12 +504,6 @@ p {
 
 }
 
-@media (max-width: 768px) {
-    .page-offer-footer {
-        display: none;
-    }
-}
-
 .page-offer-footer__title {
     font-size: 25px;
     font-weight: 700;
@@ -503,7 +515,7 @@ p {
 .page-offer-footer__benefits {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-column-gap: 36px;
+    gap: 36px;
     padding: var(--size);
     border-radius: 12px;
     border: 1px solid var(--color-light-grey);
@@ -575,7 +587,7 @@ p {
     position: fixed;
     top: 50%;
     left: 50%;
-    width: 100%;
+    width: 90%;
     max-width: 630px;
     height: auto;
     max-height: 100vh;
@@ -583,16 +595,19 @@ p {
     border-radius: 12px;
     padding: 30px 35px;
     transform: translate(-50%, -50%);
-    overflow: auto;
+    /*overflow: auto;*/
 }
 
 @media (max-width: 768px) {
     .modal__box {
-        top: 60px;
-        left: 0;
-        transform: none;
-        height: 100vh;
+        padding: 20px 25px;
     }
+}
+
+.modal__inner {
+    width: 100%;
+    height: 100%;
+    overflow: auto;
 }
 
 .modal__close {
@@ -615,7 +630,7 @@ p {
 .modal__title {
     font-size: 40px;
     font-weight: 500;
-    line-height: 1;
+    line-height: 1.2;
     color: var(--color-black);
     margin-bottom: 24px;
 }
@@ -623,6 +638,12 @@ p {
 .modal__title span {
     display: inline-block;
     color: var(--color-dark-grey);
+}
+
+@media (max-width: 768px) {
+    .modal__title {
+        font-size: 20px;
+    }
 }
 
 .modal__text {
@@ -734,12 +755,18 @@ p {
     gap: 21px;
 }
 
+@media (max-width: 768px) {
+    .page-offer-form {
+        gap: 12px;
+    }
+}
+
 .page-offer-form:before {
     content: "";
     width: 50%;
     height: 1px;
     background-color: var(--color-light-grey);
-    margin-top: 12px;
+    /*margin-top: 12px;*/
 }
 
 .page-offer-form__field label {
@@ -749,6 +776,12 @@ p {
     line-height: 1.4;
     color: var(--color-black);
     margin-bottom: 8px;
+}
+
+@media (max-width: 768px) {
+    .page-offer-form__field label {
+        font-size: 14px;
+    }
 }
 
 .page-offer-form__field input {
@@ -764,6 +797,12 @@ p {
     background-color: transparent;
     box-shadow: none;
     -webkit-appearance: none;
+}
+
+@media (max-width: 768px) {
+    .page-offer-form__field input {
+        font-size: 16px;
+    }
 }
 
 .page-offer-form__field input:focus {
@@ -793,6 +832,13 @@ p {
     margin-bottom: 20px;
 }
 
+@media (max-width: 768px) {
+    .page-offer-form__caption {
+        font-size: 14px;
+        margin-bottom: 12px;
+    }
+}
+
 .page-offer-form__radio {}
 
 .page-offer-form__radio label {
@@ -804,6 +850,12 @@ p {
     font-weight: 100;
     line-height: 1.4;
     color: var(--color-black);
+}
+
+@media (max-width: 768px) {
+    .page-offer-form__radio label {
+        font-size: 14px;
+    }
 }
 
 .page-offer-form__radio label:before {
@@ -874,4 +926,10 @@ p {
 .page-offer-form__footer span a:hover {
     opacity: .8;
     transition: opacity .3s;
+}
+
+@media (max-width: 768px) {
+    .page-offer-form__footer span {
+        display: none;
+    }
 }
