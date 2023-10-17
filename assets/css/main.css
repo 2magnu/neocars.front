@@ -421,7 +421,7 @@ p {
 
 .exchange__content {
     display: grid;
-    grid-template-columns: auto 1fr;
+    grid-template-columns: 1fr auto;
     grid-column-gap: 20px;
     grid-template-areas:
       "A C"
