@@ -745,7 +745,26 @@ p {
 }
 
 .modal-table__definition--filled {
-    color: var(--color-orange);
+    position: relative;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.2;
+    color: var(--color-black);
+    text-align: center;
+}
+
+.modal-table__definition--filled:after {
+    content: "";
+    display: block;
+    width: 4px;
+    height: 4px;
+    border: solid var(--color-black);
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
 }
 
 .modal-table__definition a {
@@ -845,9 +864,13 @@ p {
 }
 
 @media (max-width: 768px) {
-    .page-offer-form__radios input {
+    .page-offer-form__radios {
         flex-wrap: wrap;
         gap: 8px;
+    }
+
+    .page-offer-form__radio {
+        width: 100%;
     }
 }
 
