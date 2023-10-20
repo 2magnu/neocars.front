@@ -1,5 +1,6 @@
 document.addEventListener('DOMContentLoaded', function() {
     const modalTriggers = document.querySelectorAll('.js-open-modal');
+    const modalStack = [];
 
     function openModal(modalId) {
         const template = document.getElementById(modalId);
@@ -25,22 +26,30 @@ document.addEventListener('DOMContentLoaded', function() {
                 const closeButton = document.querySelector('.modal__close');
 
                 closeButton.addEventListener('click', function() {
-                    modalWrapper.style.display = 'none';
-                    document.body.style.overflow = 'auto';
-                });
-
-                modalWrapper.addEventListener('click', function(event) {
-                    if (event.target === modalWrapper) {
+                    modalStack.pop(); // Убираем последний элемент из стека
+                    const previousModalId = modalStack[modalStack.length - 1]; // Получаем предыдущий modalId из стека
+                    if (previousModalId) {
+                        modalStack.pop();
+                        openModal(previousModalId); // Открываем предыдущее модальное окно из стека
+                    } else {
                         modalWrapper.style.display = 'none';
                         document.body.style.overflow = 'auto';
                     }
                 });
 
-                // Рекурсивный вызов функции открытия модального окна
+                modalWrapper.addEventListener('click', function(event) {
+                    if (event.target === modalWrapper && event.target !== modalInner) {
+                        closeButton.click();
+                    }
+                });
+
+                modalStack.push(modalId); // Добавляем текущий modalId в стек
+
                 const nestedModalTriggers = document.querySelectorAll('.js-open-modal');
                 nestedModalTriggers.forEach(trigger => {
                     trigger.addEventListener('click', function() {
                         const nestedModalId = this.getAttribute('data-modal');
+                        modalStack.push(modalId); // Добавляем текущий modalId в стек перед открытием нового окна
                         openModal(nestedModalId);
                     });
                 });
@@ -55,6 +64,7 @@ document.addEventListener('DOMContentLoaded', function() {
     modalTriggers.forEach(trigger => {
         trigger.addEventListener('click', function() {
             const modalId = this.getAttribute('data-modal');
+            modalStack.push(modalId);
             openModal(modalId);
         });
     });
