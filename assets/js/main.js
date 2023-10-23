@@ -1,12 +1,22 @@
 $(document).ready(function(){
 
-    $('#phone').mask('+7 (ZZZ) ZZZ-ZZ-ZZ', {
-        translation: {
-            'Z': {
-                pattern: /[0-9]/, optional: true
-            }
+    $("#phone").inputmask({
+        mask: "+7(999)-999-99-99"
+    });
+
+    $("#email").inputmask({
+        mask: "*{1,20}[.*{1,20}][.*{1,20}][.*{1,20}]@*{1,20}[.*{2,6}][.*{1,2}]",
+        greedy: false,
+        onBeforePaste: function(pastedValue, opts) {
+            pastedValue = pastedValue.toLowerCase();
+            return pastedValue.replace("mailto:", "");
         },
-        placeholder: "+7(___) ___ - __ - __"
+        definitions: {
+            "*": {
+                validator: "[0-9A-Za-z!#$%&'*+/=?^_`{|}~-]",
+                casing: "lower"
+            }
+        }
     });
 
     let currentModal = null;
