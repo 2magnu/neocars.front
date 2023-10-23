@@ -245,636 +245,636 @@
 <div class="modal__wrapper">
     <div class="modal__box">
         <div class="modal__close"></div>
-        <div class="modal__inner"></div>
+        <div class="modal__inner" id="warranty">
+            <div class="modal__title">Гарантия</div>
+        </div>
+        <div class="modal__inner" id="form">
+            <div class="modal__title"><span>Владислав Валерьевич</span>, заполните, пожалуйста, форму обратной связи</div>
+            <form action="" method="post" class="page-offer-form">
+                <div class="page-offer-form__field">
+                    <label>Номер телефона</label>
+                    <input type="tel" id="phone" placeholder="+7 964 000 00 00" required>
+                </div>
+                <div class="page-offer-form__field">
+                    <label>E-mail</label>
+                    <input type="email" id="email" placeholder="vladislav_valer@mail.ru" required>
+                </div>
+                <div class="page-offer-form__fieldset">
+                    <span class="page-offer-form__caption">Форма кредитования</span>
+                    <div class="page-offer-form__radios">
+                        <div class="page-offer-form__radio">
+                            <input type="radio" id="lease" name="application" checked>
+                            <label for="lease">Лизинг</label>
+                        </div>
+                        <div class="page-offer-form__radio">
+                            <input type="radio" id="loan" name="application">
+                            <label for="loan">Автокредитование</label>
+                        </div>
+                        <div class="page-offer-form__radio">
+                            <input type="radio" id="cash" name="application">
+                            <label for="cash">Без кредитования</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="page-offer-form__fieldset">
+                    <span class="page-offer-form__caption">Способ оплаты &laquo;В&nbsp;наличии&raquo;</span>
+                    <div class="page-offer-form__radios">
+                        <div class="page-offer-form__radio">
+                            <input type="radio" id="legal" name="taxes" value="" checked>
+                            <label for="legal">С&nbsp;НДС 13&nbsp;000&nbsp;245&nbsp;руб. (Юр. лицо)</label>
+                        </div>
+                        <div class="page-offer-form__radio">
+                            <input type="radio" id="individual" name="taxes" value="">
+                            <label for="individual">Без НДС 14&nbsp;000&nbsp;245&nbsp;руб. (Физ. лицо)</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="page-offer-form__footer">
+                    <button type="submit" class="base-button base-button--filled js-form-submit">Отправить</button>
+                    <span>Оставляя заявку вы <a class="js-open-modal" data-modal="data">соглашаетесь на обработку персональных данных</a></span>
+                </div>
+            </form>
+            <div class="success-message">Спасибо!</div>
+        </div>
+        <div class="modal__inner" id="order-options">
+            <div class="modal__title">Под заказ</div>
+            <div class="modal-table">
+                <div class="modal-table__row">
+                    <div class="modal-table__row--left">
+                        <p class="modal-table__term">Предоплата</p>
+                    </div>
+                    <div class="modal-table__row--right">
+                        <p class="modal-table__definition">От 35%</p>
+                    </div>
+                </div>
+                <div class="modal-table__row">
+                    <div class="modal-table__row--left">
+                        <p class="modal-table__term">Срок поставки (передачи авто)</p>
+                    </div>
+                    <div class="modal-table__row--right">
+                        <p class="modal-table__definition">3 месяца</p>
+                    </div>
+                </div>
+                <div class="modal-table__row">
+                    <div class="modal-table__row--left">
+                        <p class="modal-table__term">Остаток оплаты</p>
+                    </div>
+                    <div class="modal-table__row--right">
+                        <p class="modal-table__definition">По готовности экспорта в Китае</p>
+                    </div>
+                </div>
+                <div class="modal-table__row">
+                    <div class="modal-table__row--left">
+                        <p class="modal-table__term">Доплата по курсу</p>
+                    </div>
+                    <div class="modal-table__row--right">
+                        <p class="modal-table__definition">Да</p>
+                    </div>
+                </div>
+                <div class="modal-table__row">
+                    <div class="modal-table__row--left">
+                        <p class="modal-table__term">Гарантия NEOCARS</p>
+                    </div>
+                    <div class="modal-table__row--right">
+                        <p class="modal-table__definition">Есть <a class="js-open-modal" data-modal="warranty">Подробнее</a></p>
+                    </div>
+                </div>
+                <div class="modal-table__row">
+                    <div class="modal-table__row--left">
+                        <p class="modal-table__term">Покупка в лизинг</p>
+                    </div>
+                    <div class="modal-table__row--right">
+                        <p class="modal-table__definition modal-table__definition--filled js-open-modal" data-modal="order-lease">Условия</p>
+                    </div>
+                </div>
+                <div class="modal-table__row">
+                    <div class="modal-table__row--left">
+                        <p class="modal-table__term">Автокредит</p>
+                    </div>
+                    <div class="modal-table__row--right">
+                        <p class="modal-table__definition modal-table__definition--filled js-open-modal" data-modal="order-loan">Условия</p>
+                    </div>
+                </div>
+            </div>
+            <button type="button" class="modal__button base-button base-button--filled js-open-modal" data-modal="form">Выбрать</button>
+        </div>
+        <div class="modal__inner" id="transit-options">
+            <div class="modal__title">В пути</div>
+            <div class="modal-table">
+                <div class="modal-table__row">
+                    <div class="modal-table__row--left">
+                        <p class="modal-table__term">Предоплата</p>
+                    </div>
+                    <div class="modal-table__row--right">
+                        <p class="modal-table__definition">От 35%</p>
+                    </div>
+                </div>
+                <div class="modal-table__row">
+                    <div class="modal-table__row--left">
+                        <p class="modal-table__term">Срок поставки (передачи авто)</p>
+                    </div>
+                    <div class="modal-table__row--right">
+                        <p class="modal-table__definition">Срок поставки 1&ndash;2 месяца <span>чем ближе к выдаче, тем дороже</span></p>
+                    </div>
+                </div>
+                <div class="modal-table__row">
+                    <div class="modal-table__row--left">
+                        <p class="modal-table__term">Остаток оплаты</p>
+                    </div>
+                    <div class="modal-table__row--right">
+                        <p class="modal-table__definition">По приходу на таможню ЕАЭС</p>
+                    </div>
+                </div>
+                <div class="modal-table__row">
+                    <div class="modal-table__row--left">
+                        <p class="modal-table__term">Доплата по курсу</p>
+                    </div>
+                    <div class="modal-table__row--right">
+                        <p class="modal-table__definition">Да</p>
+                    </div>
+                </div>
+                <div class="modal-table__row">
+                    <div class="modal-table__row--left">
+                        <p class="modal-table__term">Гарантия NEOCARS</p>
+                    </div>
+                    <div class="modal-table__row--right">
+                        <p class="modal-table__definition">Есть <a class="js-open-modal" data-modal="warranty">Подробнее</a></p>
+                    </div>
+                </div>
+                <div class="modal-table__row">
+                    <div class="modal-table__row--left">
+                        <p class="modal-table__term">Покупка в лизинг</p>
+                    </div>
+                    <div class="modal-table__row--right">
+                        <p class="modal-table__definition modal-table__definition--filled js-open-modal" data-modal="transit-lease">Условия</p>
+                    </div>
+                </div>
+                <div class="modal-table__row">
+                    <div class="modal-table__row--left">
+                        <p class="modal-table__term">Автокредит</p>
+                    </div>
+                    <div class="modal-table__row--right">
+                        <p class="modal-table__definition modal-table__definition--filled js-open-modal" data-modal="transit-loan">Условия</p>
+                    </div>
+                </div>
+            </div>
+            <button type="button" class="modal__button base-button base-button--filled js-open-modal" data-modal="form">Выбрать</button>
+        </div>
+        <div class="modal__inner" id="stock-options">
+            <div class="modal__title">В наличии</div>
+            <div class="modal-table">
+                <div class="modal-table__row">
+                    <div class="modal-table__row--left">
+                        <p class="modal-table__term">Предоплата</p>
+                    </div>
+                    <div class="modal-table__row--right">
+                        <p class="modal-table__definition">&mdash;</p>
+                    </div>
+                </div>
+                <div class="modal-table__row">
+                    <div class="modal-table__row--left">
+                        <p class="modal-table__term">Срок поставки (передачи авто)</p>
+                    </div>
+                    <div class="modal-table__row--right">
+                        <p class="modal-table__definition">10&ndash;14 дней</p>
+                    </div>
+                </div>
+                <div class="modal-table__row">
+                    <div class="modal-table__row--left">
+                        <p class="modal-table__term">Остаток оплаты</p>
+                    </div>
+                    <div class="modal-table__row--right">
+                        <p class="modal-table__definition">&mdash;</p>
+                    </div>
+                </div>
+                <div class="modal-table__row">
+                    <div class="modal-table__row--left">
+                        <p class="modal-table__term">Доплата по курсу</p>
+                    </div>
+                    <div class="modal-table__row--right">
+                        <p class="modal-table__definition">&mdash;</p>
+                    </div>
+                </div>
+                <div class="modal-table__row">
+                    <div class="modal-table__row--left">
+                        <p class="modal-table__term">Гарантия NEOCARS</p>
+                    </div>
+                    <div class="modal-table__row--right">
+                        <p class="modal-table__definition">Есть <a class="js-open-modal" data-modal="warranty">Подробнее</a></p>
+                    </div>
+                </div>
+                <div class="modal-table__row">
+                    <div class="modal-table__row--left">
+                        <p class="modal-table__term">Покупка в лизинг</p>
+                    </div>
+                    <div class="modal-table__row--right">
+                        <p class="modal-table__definition modal-table__definition--filled js-open-modal" data-modal="stock-lease">Условия</p>
+                    </div>
+                </div>
+                <div class="modal-table__row">
+                    <div class="modal-table__row--left">
+                        <p class="modal-table__term">Автокредит</p>
+                    </div>
+                    <div class="modal-table__row--right">
+                        <p class="modal-table__definition modal-table__definition--filled js-open-modal" data-modal="stock-loan">Условия</p>
+                    </div>
+                </div>
+            </div>
+            <button type="button" class="modal__button base-button base-button--filled js-open-modal" data-modal="form">Выбрать</button>
+        </div>
+        <div class="modal__inner" id="order-lease">
+            <div class="modal__title"><span>Покупка в лизинг</span> под заказ</div>
+            <div class="modal-table">
+                <div class="modal-table__row">
+                    <div class="modal-table__row--left">
+                        <p class="modal-table__term">Первый взнос</p>
+                    </div>
+                    <div class="modal-table__row--right">
+                        <p class="modal-table__definition">от&nbsp;1&nbsp;085&nbsp;000&nbsp;руб.</p>
+                    </div>
+                </div>
+                <div class="modal-table__row">
+                    <div class="modal-table__row--left">
+                        <p class="modal-table__term">Ежемесячный платеж</p>
+                    </div>
+                    <div class="modal-table__row--right">
+                        <p class="modal-table__definition">215&nbsp;000&nbsp;руб. до&nbsp;603&nbsp;000&nbsp;руб.</p>
+                    </div>
+                </div>
+                <div class="modal-table__row">
+                    <div class="modal-table__row--left">
+                        <p class="modal-table__term">КАСКО в&nbsp;%&nbsp;от&nbsp;стоимости автомобиля</p>
+                    </div>
+                    <div class="modal-table__row--right">
+                        <p class="modal-table__definition">от&nbsp;4%</p>
+                    </div>
+                </div>
+                <div class="modal-table__row">
+                    <div class="modal-table__row--left">
+                        <p class="modal-table__term">Экономия на налогах</p>
+                    </div>
+                    <div class="modal-table__row--right">
+                        <p class="modal-table__definition">до&nbsp;3&nbsp;978&nbsp;333&nbsp;руб.</p>
+                    </div>
+                </div>
+                <div class="modal-table__row">
+                    <div class="modal-table__row--left">
+                        <p class="modal-table__term">Итоговая стоимость после вычета налогов</p>
+                    </div>
+                    <div class="modal-table__row--right">
+                        <p class="modal-table__definition">6&nbsp;871&nbsp;667&nbsp;руб.</p>
+                    </div>
+                </div>
+                <div class="modal-table__row">
+                    <div class="modal-table__row--left">
+                        <p class="modal-table__term">Дополнительная экономия на НДФЛ</p>
+                    </div>
+                    <div class="modal-table__row--right">
+                        <p class="modal-table__definition">1&nbsp;131&nbsp;000&nbsp;руб.</p>
+                    </div>
+                </div>
+                <div class="modal-table__row">
+                    <div class="modal-table__row--left">
+                        <p class="modal-table__term">Лизинговые компании-партнеры</p>
+                    </div>
+                    <div class="modal-table__row--right">
+                        <p class="modal-table__definition">Каркаде, Европлан, ВТБ, Ресо и др.</p>
+                    </div>
+                </div>
+            </div>
+            <button type="button" class="modal__button base-button base-button--filled js-open-modal" data-modal="form">Выбрать</button>
+        </div>
+        <div class="modal__inner" id="order-loan">
+            <div class="modal__title"><span>Покупка в кредит</span> под заказ</div>
+            <div class="modal-table">
+                <div class="modal-table__row">
+                    <div class="modal-table__row--left">
+                        <p class="modal-table__term">Первый взнос</p>
+                    </div>
+                    <div class="modal-table__row--right">
+                        <p class="modal-table__definition">от&nbsp;1&nbsp;085&nbsp;000&nbsp;руб.</p>
+                    </div>
+                </div>
+                <div class="modal-table__row">
+                    <div class="modal-table__row--left">
+                        <p class="modal-table__term">Ежемесячный платеж</p>
+                    </div>
+                    <div class="modal-table__row--right">
+                        <p class="modal-table__definition">215&nbsp;000&nbsp;руб. до&nbsp;603&nbsp;000&nbsp;руб.</p>
+                    </div>
+                </div>
+                <div class="modal-table__row">
+                    <div class="modal-table__row--left">
+                        <p class="modal-table__term">КАСКО в&nbsp;%&nbsp;от&nbsp;стоимости автомобиля</p>
+                    </div>
+                    <div class="modal-table__row--right">
+                        <p class="modal-table__definition">от&nbsp;4%</p>
+                    </div>
+                </div>
+                <div class="modal-table__row">
+                    <div class="modal-table__row--left">
+                        <p class="modal-table__term">Экономия на налогах</p>
+                    </div>
+                    <div class="modal-table__row--right">
+                        <p class="modal-table__definition">до&nbsp;3&nbsp;978&nbsp;333&nbsp;руб.</p>
+                    </div>
+                </div>
+                <div class="modal-table__row">
+                    <div class="modal-table__row--left">
+                        <p class="modal-table__term">Итоговая стоимость после вычета налогов</p>
+                    </div>
+                    <div class="modal-table__row--right">
+                        <p class="modal-table__definition">6&nbsp;871&nbsp;667&nbsp;руб.</p>
+                    </div>
+                </div>
+                <div class="modal-table__row">
+                    <div class="modal-table__row--left">
+                        <p class="modal-table__term">Дополнительная экономия на НДФЛ</p>
+                    </div>
+                    <div class="modal-table__row--right">
+                        <p class="modal-table__definition">1&nbsp;131&nbsp;000&nbsp;руб.</p>
+                    </div>
+                </div>
+                <div class="modal-table__row">
+                    <div class="modal-table__row--left">
+                        <p class="modal-table__term">Лизинговые компании-партнеры</p>
+                    </div>
+                    <div class="modal-table__row--right">
+                        <p class="modal-table__definition">Каркаде, Европлан, ВТБ, Ресо и др.</p>
+                    </div>
+                </div>
+            </div>
+            <button type="button" class="modal__button base-button base-button--filled js-open-modal" data-modal="form">Выбрать</button>
+        </div>
+        <div class="modal__inner" id="transit-lease">
+            <div class="modal__title"><span>Покупка в лизинг</span> в пути</div>
+            <div class="modal-table">
+                <div class="modal-table__row">
+                    <div class="modal-table__row--left">
+                        <p class="modal-table__term">Первый взнос</p>
+                    </div>
+                    <div class="modal-table__row--right">
+                        <p class="modal-table__definition">от&nbsp;1&nbsp;085&nbsp;000&nbsp;руб.</p>
+                    </div>
+                </div>
+                <div class="modal-table__row">
+                    <div class="modal-table__row--left">
+                        <p class="modal-table__term">Ежемесячный платеж</p>
+                    </div>
+                    <div class="modal-table__row--right">
+                        <p class="modal-table__definition">215&nbsp;000&nbsp;руб. до&nbsp;603&nbsp;000&nbsp;руб.</p>
+                    </div>
+                </div>
+                <div class="modal-table__row">
+                    <div class="modal-table__row--left">
+                        <p class="modal-table__term">КАСКО в&nbsp;%&nbsp;от&nbsp;стоимости автомобиля</p>
+                    </div>
+                    <div class="modal-table__row--right">
+                        <p class="modal-table__definition">от&nbsp;4%</p>
+                    </div>
+                </div>
+                <div class="modal-table__row">
+                    <div class="modal-table__row--left">
+                        <p class="modal-table__term">Экономия на налогах</p>
+                    </div>
+                    <div class="modal-table__row--right">
+                        <p class="modal-table__definition">до&nbsp;3&nbsp;978&nbsp;333&nbsp;руб.</p>
+                    </div>
+                </div>
+                <div class="modal-table__row">
+                    <div class="modal-table__row--left">
+                        <p class="modal-table__term">Итоговая стоимость после вычета налогов</p>
+                    </div>
+                    <div class="modal-table__row--right">
+                        <p class="modal-table__definition">6&nbsp;871&nbsp;667&nbsp;руб.</p>
+                    </div>
+                </div>
+                <div class="modal-table__row">
+                    <div class="modal-table__row--left">
+                        <p class="modal-table__term">Дополнительная экономия на НДФЛ</p>
+                    </div>
+                    <div class="modal-table__row--right">
+                        <p class="modal-table__definition">1&nbsp;131&nbsp;000&nbsp;руб.</p>
+                    </div>
+                </div>
+                <div class="modal-table__row">
+                    <div class="modal-table__row--left">
+                        <p class="modal-table__term">Лизинговые компании-партнеры</p>
+                    </div>
+                    <div class="modal-table__row--right">
+                        <p class="modal-table__definition">Каркаде, Европлан, ВТБ, Ресо и др.</p>
+                    </div>
+                </div>
+            </div>
+            <button type="button" class="modal__button base-button base-button--filled js-open-modal" data-modal="form">Выбрать</button>
+        </div>
+        <div class="modal__inner" id="transit-loan">
+            <div class="modal__title"><span>Покупка в кредит</span> в пути</div>
+            <div class="modal-table">
+                <div class="modal-table__row">
+                    <div class="modal-table__row--left">
+                        <p class="modal-table__term">Первый взнос</p>
+                    </div>
+                    <div class="modal-table__row--right">
+                        <p class="modal-table__definition">от&nbsp;1&nbsp;085&nbsp;000&nbsp;руб.</p>
+                    </div>
+                </div>
+                <div class="modal-table__row">
+                    <div class="modal-table__row--left">
+                        <p class="modal-table__term">Ежемесячный платеж</p>
+                    </div>
+                    <div class="modal-table__row--right">
+                        <p class="modal-table__definition">215&nbsp;000&nbsp;руб. до&nbsp;603&nbsp;000&nbsp;руб.</p>
+                    </div>
+                </div>
+                <div class="modal-table__row">
+                    <div class="modal-table__row--left">
+                        <p class="modal-table__term">КАСКО в&nbsp;%&nbsp;от&nbsp;стоимости автомобиля</p>
+                    </div>
+                    <div class="modal-table__row--right">
+                        <p class="modal-table__definition">от&nbsp;4%</p>
+                    </div>
+                </div>
+                <div class="modal-table__row">
+                    <div class="modal-table__row--left">
+                        <p class="modal-table__term">Экономия на налогах</p>
+                    </div>
+                    <div class="modal-table__row--right">
+                        <p class="modal-table__definition">до&nbsp;3&nbsp;978&nbsp;333&nbsp;руб.</p>
+                    </div>
+                </div>
+                <div class="modal-table__row">
+                    <div class="modal-table__row--left">
+                        <p class="modal-table__term">Итоговая стоимость после вычета налогов</p>
+                    </div>
+                    <div class="modal-table__row--right">
+                        <p class="modal-table__definition">6&nbsp;871&nbsp;667&nbsp;руб.</p>
+                    </div>
+                </div>
+                <div class="modal-table__row">
+                    <div class="modal-table__row--left">
+                        <p class="modal-table__term">Дополнительная экономия на НДФЛ</p>
+                    </div>
+                    <div class="modal-table__row--right">
+                        <p class="modal-table__definition">1&nbsp;131&nbsp;000&nbsp;руб.</p>
+                    </div>
+                </div>
+                <div class="modal-table__row">
+                    <div class="modal-table__row--left">
+                        <p class="modal-table__term">Лизинговые компании-партнеры</p>
+                    </div>
+                    <div class="modal-table__row--right">
+                        <p class="modal-table__definition">Каркаде, Европлан, ВТБ, Ресо и др.</p>
+                    </div>
+                </div>
+            </div>
+            <button type="button" class="modal__button base-button base-button--filled js-open-modal" data-modal="form">Выбрать</button>
+        </div>
+        <div class="modal__inner" id="stock-lease">
+            <div class="modal__title"><span>Покупка в лизинг</span> в наличии</div>
+            <div class="modal-table">
+                <div class="modal-table__row">
+                    <div class="modal-table__row--left">
+                        <p class="modal-table__term">Первый взнос</p>
+                    </div>
+                    <div class="modal-table__row--right">
+                        <p class="modal-table__definition">от&nbsp;1&nbsp;085&nbsp;000&nbsp;руб.</p>
+                    </div>
+                </div>
+                <div class="modal-table__row">
+                    <div class="modal-table__row--left">
+                        <p class="modal-table__term">Ежемесячный платеж</p>
+                    </div>
+                    <div class="modal-table__row--right">
+                        <p class="modal-table__definition">215&nbsp;000&nbsp;руб. до&nbsp;603&nbsp;000&nbsp;руб.</p>
+                    </div>
+                </div>
+                <div class="modal-table__row">
+                    <div class="modal-table__row--left">
+                        <p class="modal-table__term">КАСКО в&nbsp;%&nbsp;от&nbsp;стоимости автомобиля</p>
+                    </div>
+                    <div class="modal-table__row--right">
+                        <p class="modal-table__definition">от&nbsp;4%</p>
+                    </div>
+                </div>
+                <div class="modal-table__row">
+                    <div class="modal-table__row--left">
+                        <p class="modal-table__term">Экономия на налогах</p>
+                    </div>
+                    <div class="modal-table__row--right">
+                        <p class="modal-table__definition">до&nbsp;3&nbsp;978&nbsp;333&nbsp;руб.</p>
+                    </div>
+                </div>
+                <div class="modal-table__row">
+                    <div class="modal-table__row--left">
+                        <p class="modal-table__term">Итоговая стоимость после вычета налогов</p>
+                    </div>
+                    <div class="modal-table__row--right">
+                        <p class="modal-table__definition">6&nbsp;871&nbsp;667&nbsp;руб.</p>
+                    </div>
+                </div>
+                <div class="modal-table__row">
+                    <div class="modal-table__row--left">
+                        <p class="modal-table__term">Дополнительная экономия на НДФЛ</p>
+                    </div>
+                    <div class="modal-table__row--right">
+                        <p class="modal-table__definition">1&nbsp;131&nbsp;000&nbsp;руб.</p>
+                    </div>
+                </div>
+                <div class="modal-table__row">
+                    <div class="modal-table__row--left">
+                        <p class="modal-table__term">Лизинговые компании-партнеры</p>
+                    </div>
+                    <div class="modal-table__row--right">
+                        <p class="modal-table__definition">Каркаде, Европлан, ВТБ, Ресо и др.</p>
+                    </div>
+                </div>
+            </div>
+            <button type="button" class="modal__button base-button base-button--filled js-open-modal" data-modal="form">Выбрать</button>
+        </div>
+        <div class="modal__inner" id="stock-loan">
+            <div class="modal__title"><span>Покупка в кредит</span> в наличии</div>
+            <div class="modal-table">
+                <div class="modal-table__row">
+                    <div class="modal-table__row--left">
+                        <p class="modal-table__term">Первый взнос</p>
+                    </div>
+                    <div class="modal-table__row--right">
+                        <p class="modal-table__definition">от&nbsp;1&nbsp;085&nbsp;000&nbsp;руб.</p>
+                    </div>
+                </div>
+                <div class="modal-table__row">
+                    <div class="modal-table__row--left">
+                        <p class="modal-table__term">Ежемесячный платеж</p>
+                    </div>
+                    <div class="modal-table__row--right">
+                        <p class="modal-table__definition">215&nbsp;000&nbsp;руб. до&nbsp;603&nbsp;000&nbsp;руб.</p>
+                    </div>
+                </div>
+                <div class="modal-table__row">
+                    <div class="modal-table__row--left">
+                        <p class="modal-table__term">КАСКО в&nbsp;%&nbsp;от&nbsp;стоимости автомобиля</p>
+                    </div>
+                    <div class="modal-table__row--right">
+                        <p class="modal-table__definition">от&nbsp;4%</p>
+                    </div>
+                </div>
+                <div class="modal-table__row">
+                    <div class="modal-table__row--left">
+                        <p class="modal-table__term">Экономия на налогах</p>
+                    </div>
+                    <div class="modal-table__row--right">
+                        <p class="modal-table__definition">до&nbsp;3&nbsp;978&nbsp;333&nbsp;руб.</p>
+                    </div>
+                </div>
+                <div class="modal-table__row">
+                    <div class="modal-table__row--left">
+                        <p class="modal-table__term">Итоговая стоимость после вычета налогов</p>
+                    </div>
+                    <div class="modal-table__row--right">
+                        <p class="modal-table__definition">6&nbsp;871&nbsp;667&nbsp;руб.</p>
+                    </div>
+                </div>
+                <div class="modal-table__row">
+                    <div class="modal-table__row--left">
+                        <p class="modal-table__term">Дополнительная экономия на НДФЛ</p>
+                    </div>
+                    <div class="modal-table__row--right">
+                        <p class="modal-table__definition">1&nbsp;131&nbsp;000&nbsp;руб.</p>
+                    </div>
+                </div>
+                <div class="modal-table__row">
+                    <div class="modal-table__row--left">
+                        <p class="modal-table__term">Лизинговые компании-партнеры</p>
+                    </div>
+                    <div class="modal-table__row--right">
+                        <p class="modal-table__definition">Каркаде, Европлан, ВТБ, Ресо и др.</p>
+                    </div>
+                </div>
+            </div>
+            <button type="button" class="modal__button base-button base-button--filled js-open-modal" data-modal="form">Выбрать</button>
+        </div>
+        <div class="modal__inner" id="data">
+            <div class="modal__title"><span>Политика обработки персональных данных</span> ООО «Нео Карс»</div>
+            <div class="modal__longread">
+                <p>Настоящий документ определяет политику ООО «ИнфоПуш» (далее Компания) в отношении обработки и защиты персональных данных.</p>
+                <p>Общие положения</p>
+                <p>Политика определяет общие принципы и порядок обработки персональных данных и меры по обеспечению их безопасности в БонусПлюс. Целью Политики является обеспечение защиты прав и свобод человека и гражданина при обработке его персональных данных, а также соблюдение требований российского законодательства в области персональных данных.</p>
+                <p>Политика разработана в соответствии с положениями Конституции Российской Федерации, Федерального закона от 27.07.2006 № 152-ФЗ «О персональных данных», других нормативных актов.</p>
+                <p>В Политике используются следующие термины и определения:</p>
+                <p>Персональные данные - любая информация, относящаяся к прямо или косвенно определенному, или определяемому физическому лицу (субъекту персональных данных);</p>
+                <p>Персональные данные работника – любая информация, относящиеся к конкретному работнику и его деловым (профессиональным и личностным) качествам, обрабатываемая Компанией в связи с осуществлением трудовой функции работника в установленных законодательством целях.</p>
+                <p>Субъект персональных данных – физическое лицо, персональные данные которого обрабатывается Компанией.</p>
+                <p>Обработка персональных данных – любое действие (операция) или совокупность действий (операций), совершаемых с использованием средств автоматизации или без использования таких средств с персональными данными, включая сбор, запись, систематизацию, накопление, хранение, уточнение (обновление, изменение), извлечение, использование, передачу (распространение, предоставление, доступ), обезличивание, блокирование, удаление, уничтожение персональных данных;</p>
+                <p>Обезличивание персональных данных(уничтожение) – действия, в результате которых становится невозможным определить принадлежность персональных данных конкретному субъекту персональных данных;</p>
+                <p>Автоматизированная обработка персональных данных – обработка персональных данных с помощью средств вычислительной техники;</p>
+            </div>
+        </div>
     </div>
 </div>
-<template id="warranty">
-    <div class="modal__title">Гарантия</div>
-</template>
-<template id="form">
-    <div class="modal__title"><span>Владислав Валерьевич</span>, заполните, пожалуйста, форму обратной связи</div>
-    <form action="" method="post" class="page-offer-form">
-        <div class="page-offer-form__field">
-            <label>Номер телефона</label>
-            <input type="tel" id="phone" placeholder="+7 964 000 00 00" data-mask='{"mask": "+9 999 999-99-99"}' required>
-        </div>
-        <div class="page-offer-form__field">
-            <label>E-mail</label>
-            <input type="email" id="email" placeholder="vladislav_valer@mail.ru" data-mask='{"alias": "email"}' required>
-        </div>
-        <div class="page-offer-form__fieldset">
-            <span class="page-offer-form__caption">Форма кредитования</span>
-            <div class="page-offer-form__radios">
-                <div class="page-offer-form__radio">
-                    <input type="radio" id="lease" name="application" checked>
-                    <label for="lease">Лизинг</label>
-                </div>
-                <div class="page-offer-form__radio">
-                    <input type="radio" id="loan" name="application">
-                    <label for="loan">Автокредитование</label>
-                </div>
-                <div class="page-offer-form__radio">
-                    <input type="radio" id="cash" name="application">
-                    <label for="cash">Без кредитования</label>
-                </div>
-            </div>
-        </div>
-        <div class="page-offer-form__fieldset">
-            <span class="page-offer-form__caption">Способ оплаты &laquo;В&nbsp;наличии&raquo;</span>
-            <div class="page-offer-form__radios">
-                <div class="page-offer-form__radio">
-                    <input type="radio" id="legal" name="taxes" value="" checked>
-                    <label for="legal">С&nbsp;НДС 13&nbsp;000&nbsp;245&nbsp;руб. (Юр. лицо)</label>
-                </div>
-                <div class="page-offer-form__radio">
-                    <input type="radio" id="individual" name="taxes" value="">
-                    <label for="individual">Без НДС 14&nbsp;000&nbsp;245&nbsp;руб. (Физ. лицо)</label>
-                </div>
-            </div>
-        </div>
-        <div class="page-offer-form__footer">
-            <button type="submit" class="base-button base-button--filled js-form-submit">Отправить</button>
-            <span>Оставляя заявку вы <a class="js-open-modal" data-modal="data">соглашаетесь на обработку персональных данных</a></span>
-        </div>
-    </form>
-    <div class="success-message">Спасибо!</div>
-</template>
-<template id="order-options">
-    <div class="modal__title">Под заказ</div>
-    <div class="modal-table">
-        <div class="modal-table__row">
-            <div class="modal-table__row--left">
-                <p class="modal-table__term">Предоплата</p>
-            </div>
-            <div class="modal-table__row--right">
-                <p class="modal-table__definition">От 35%</p>
-            </div>
-        </div>
-        <div class="modal-table__row">
-            <div class="modal-table__row--left">
-                <p class="modal-table__term">Срок поставки (передачи авто)</p>
-            </div>
-            <div class="modal-table__row--right">
-                <p class="modal-table__definition">3 месяца</p>
-            </div>
-        </div>
-        <div class="modal-table__row">
-            <div class="modal-table__row--left">
-                <p class="modal-table__term">Остаток оплаты</p>
-            </div>
-            <div class="modal-table__row--right">
-                <p class="modal-table__definition">По готовности экспорта в Китае</p>
-            </div>
-        </div>
-        <div class="modal-table__row">
-            <div class="modal-table__row--left">
-                <p class="modal-table__term">Доплата по курсу</p>
-            </div>
-            <div class="modal-table__row--right">
-                <p class="modal-table__definition">Да</p>
-            </div>
-        </div>
-        <div class="modal-table__row">
-            <div class="modal-table__row--left">
-                <p class="modal-table__term">Гарантия NEOCARS</p>
-            </div>
-            <div class="modal-table__row--right">
-                <p class="modal-table__definition">Есть <a class="js-open-modal" data-modal="warranty">Подробнее</a></p>
-            </div>
-        </div>
-        <div class="modal-table__row">
-            <div class="modal-table__row--left">
-                <p class="modal-table__term">Покупка в лизинг</p>
-            </div>
-            <div class="modal-table__row--right">
-                <p class="modal-table__definition modal-table__definition--filled js-open-modal" data-modal="order-lease">Условия</p>
-            </div>
-        </div>
-        <div class="modal-table__row">
-            <div class="modal-table__row--left">
-                <p class="modal-table__term">Автокредит</p>
-            </div>
-            <div class="modal-table__row--right">
-                <p class="modal-table__definition modal-table__definition--filled js-open-modal" data-modal="order-loan">Условия</p>
-            </div>
-        </div>
-    </div>
-    <button type="button" class="modal__button base-button base-button--filled js-open-modal" data-modal="form">Выбрать</button>
-</template>
-<template id="transit-options">
-    <div class="modal__title">В пути</div>
-    <div class="modal-table">
-        <div class="modal-table__row">
-            <div class="modal-table__row--left">
-                <p class="modal-table__term">Предоплата</p>
-            </div>
-            <div class="modal-table__row--right">
-                <p class="modal-table__definition">От 35%</p>
-            </div>
-        </div>
-        <div class="modal-table__row">
-            <div class="modal-table__row--left">
-                <p class="modal-table__term">Срок поставки (передачи авто)</p>
-            </div>
-            <div class="modal-table__row--right">
-                <p class="modal-table__definition">Срок поставки 1&ndash;2 месяца <span>чем ближе к выдаче, тем дороже</span></p>
-            </div>
-        </div>
-        <div class="modal-table__row">
-            <div class="modal-table__row--left">
-                <p class="modal-table__term">Остаток оплаты</p>
-            </div>
-            <div class="modal-table__row--right">
-                <p class="modal-table__definition">По приходу на таможню ЕАЭС</p>
-            </div>
-        </div>
-        <div class="modal-table__row">
-            <div class="modal-table__row--left">
-                <p class="modal-table__term">Доплата по курсу</p>
-            </div>
-            <div class="modal-table__row--right">
-                <p class="modal-table__definition">Да</p>
-            </div>
-        </div>
-        <div class="modal-table__row">
-            <div class="modal-table__row--left">
-                <p class="modal-table__term">Гарантия NEOCARS</p>
-            </div>
-            <div class="modal-table__row--right">
-                <p class="modal-table__definition">Есть <a class="js-open-modal" data-modal="warranty">Подробнее</a></p>
-            </div>
-        </div>
-        <div class="modal-table__row">
-            <div class="modal-table__row--left">
-                <p class="modal-table__term">Покупка в лизинг</p>
-            </div>
-            <div class="modal-table__row--right">
-                <p class="modal-table__definition modal-table__definition--filled js-open-modal" data-modal="transit-lease">Условия</p>
-            </div>
-        </div>
-        <div class="modal-table__row">
-            <div class="modal-table__row--left">
-                <p class="modal-table__term">Автокредит</p>
-            </div>
-            <div class="modal-table__row--right">
-                <p class="modal-table__definition modal-table__definition--filled js-open-modal" data-modal="transit-loan">Условия</p>
-            </div>
-        </div>
-    </div>
-    <button type="button" class="modal__button base-button base-button--filled js-open-modal" data-modal="form">Выбрать</button>
-</template>
-<template id="stock-options">
-    <div class="modal__title">В наличии</div>
-    <div class="modal-table">
-        <div class="modal-table__row">
-            <div class="modal-table__row--left">
-                <p class="modal-table__term">Предоплата</p>
-            </div>
-            <div class="modal-table__row--right">
-                <p class="modal-table__definition">&mdash;</p>
-            </div>
-        </div>
-        <div class="modal-table__row">
-            <div class="modal-table__row--left">
-                <p class="modal-table__term">Срок поставки (передачи авто)</p>
-            </div>
-            <div class="modal-table__row--right">
-                <p class="modal-table__definition">10&ndash;14 дней</p>
-            </div>
-        </div>
-        <div class="modal-table__row">
-            <div class="modal-table__row--left">
-                <p class="modal-table__term">Остаток оплаты</p>
-            </div>
-            <div class="modal-table__row--right">
-                <p class="modal-table__definition">&mdash;</p>
-            </div>
-        </div>
-        <div class="modal-table__row">
-            <div class="modal-table__row--left">
-                <p class="modal-table__term">Доплата по курсу</p>
-            </div>
-            <div class="modal-table__row--right">
-                <p class="modal-table__definition">&mdash;</p>
-            </div>
-        </div>
-        <div class="modal-table__row">
-            <div class="modal-table__row--left">
-                <p class="modal-table__term">Гарантия NEOCARS</p>
-            </div>
-            <div class="modal-table__row--right">
-                <p class="modal-table__definition">Есть <a class="js-open-modal" data-modal="warranty">Подробнее</a></p>
-            </div>
-        </div>
-        <div class="modal-table__row">
-            <div class="modal-table__row--left">
-                <p class="modal-table__term">Покупка в лизинг</p>
-            </div>
-            <div class="modal-table__row--right">
-                <p class="modal-table__definition modal-table__definition--filled js-open-modal" data-modal="stock-lease">Условия</p>
-            </div>
-        </div>
-        <div class="modal-table__row">
-            <div class="modal-table__row--left">
-                <p class="modal-table__term">Автокредит</p>
-            </div>
-            <div class="modal-table__row--right">
-                <p class="modal-table__definition modal-table__definition--filled js-open-modal" data-modal="stock-loan">Условия</p>
-            </div>
-        </div>
-    </div>
-    <button type="button" class="modal__button base-button base-button--filled js-open-modal" data-modal="form">Выбрать</button>
-</template>
-<template id="order-lease">
-    <div class="modal__title"><span>Покупка в лизинг</span> под заказ</div>
-    <div class="modal-table">
-        <div class="modal-table__row">
-            <div class="modal-table__row--left">
-                <p class="modal-table__term">Первый взнос</p>
-            </div>
-            <div class="modal-table__row--right">
-                <p class="modal-table__definition">от&nbsp;1&nbsp;085&nbsp;000&nbsp;руб.</p>
-            </div>
-        </div>
-        <div class="modal-table__row">
-            <div class="modal-table__row--left">
-                <p class="modal-table__term">Ежемесячный платеж</p>
-            </div>
-            <div class="modal-table__row--right">
-                <p class="modal-table__definition">215&nbsp;000&nbsp;руб. до&nbsp;603&nbsp;000&nbsp;руб.</p>
-            </div>
-        </div>
-        <div class="modal-table__row">
-            <div class="modal-table__row--left">
-                <p class="modal-table__term">КАСКО в&nbsp;%&nbsp;от&nbsp;стоимости автомобиля</p>
-            </div>
-            <div class="modal-table__row--right">
-                <p class="modal-table__definition">от&nbsp;4%</p>
-            </div>
-        </div>
-        <div class="modal-table__row">
-            <div class="modal-table__row--left">
-                <p class="modal-table__term">Экономия на налогах</p>
-            </div>
-            <div class="modal-table__row--right">
-                <p class="modal-table__definition">до&nbsp;3&nbsp;978&nbsp;333&nbsp;руб.</p>
-            </div>
-        </div>
-        <div class="modal-table__row">
-            <div class="modal-table__row--left">
-                <p class="modal-table__term">Итоговая стоимость после вычета налогов</p>
-            </div>
-            <div class="modal-table__row--right">
-                <p class="modal-table__definition">6&nbsp;871&nbsp;667&nbsp;руб.</p>
-            </div>
-        </div>
-        <div class="modal-table__row">
-            <div class="modal-table__row--left">
-                <p class="modal-table__term">Дополнительная экономия на НДФЛ</p>
-            </div>
-            <div class="modal-table__row--right">
-                <p class="modal-table__definition">1&nbsp;131&nbsp;000&nbsp;руб.</p>
-            </div>
-        </div>
-        <div class="modal-table__row">
-            <div class="modal-table__row--left">
-                <p class="modal-table__term">Лизинговые компании-партнеры</p>
-            </div>
-            <div class="modal-table__row--right">
-                <p class="modal-table__definition">Каркаде, Европлан, ВТБ, Ресо и др.</p>
-            </div>
-        </div>
-    </div>
-    <button type="button" class="modal__button base-button base-button--filled js-open-modal" data-modal="form">Выбрать</button>
-</template>
-<template id="order-loan">
-    <div class="modal__title"><span>Покупка в кредит</span> под заказ</div>
-    <div class="modal-table">
-        <div class="modal-table__row">
-            <div class="modal-table__row--left">
-                <p class="modal-table__term">Первый взнос</p>
-            </div>
-            <div class="modal-table__row--right">
-                <p class="modal-table__definition">от&nbsp;1&nbsp;085&nbsp;000&nbsp;руб.</p>
-            </div>
-        </div>
-        <div class="modal-table__row">
-            <div class="modal-table__row--left">
-                <p class="modal-table__term">Ежемесячный платеж</p>
-            </div>
-            <div class="modal-table__row--right">
-                <p class="modal-table__definition">215&nbsp;000&nbsp;руб. до&nbsp;603&nbsp;000&nbsp;руб.</p>
-            </div>
-        </div>
-        <div class="modal-table__row">
-            <div class="modal-table__row--left">
-                <p class="modal-table__term">КАСКО в&nbsp;%&nbsp;от&nbsp;стоимости автомобиля</p>
-            </div>
-            <div class="modal-table__row--right">
-                <p class="modal-table__definition">от&nbsp;4%</p>
-            </div>
-        </div>
-        <div class="modal-table__row">
-            <div class="modal-table__row--left">
-                <p class="modal-table__term">Экономия на налогах</p>
-            </div>
-            <div class="modal-table__row--right">
-                <p class="modal-table__definition">до&nbsp;3&nbsp;978&nbsp;333&nbsp;руб.</p>
-            </div>
-        </div>
-        <div class="modal-table__row">
-            <div class="modal-table__row--left">
-                <p class="modal-table__term">Итоговая стоимость после вычета налогов</p>
-            </div>
-            <div class="modal-table__row--right">
-                <p class="modal-table__definition">6&nbsp;871&nbsp;667&nbsp;руб.</p>
-            </div>
-        </div>
-        <div class="modal-table__row">
-            <div class="modal-table__row--left">
-                <p class="modal-table__term">Дополнительная экономия на НДФЛ</p>
-            </div>
-            <div class="modal-table__row--right">
-                <p class="modal-table__definition">1&nbsp;131&nbsp;000&nbsp;руб.</p>
-            </div>
-        </div>
-        <div class="modal-table__row">
-            <div class="modal-table__row--left">
-                <p class="modal-table__term">Лизинговые компании-партнеры</p>
-            </div>
-            <div class="modal-table__row--right">
-                <p class="modal-table__definition">Каркаде, Европлан, ВТБ, Ресо и др.</p>
-            </div>
-        </div>
-    </div>
-    <button type="button" class="modal__button base-button base-button--filled js-open-modal" data-modal="form">Выбрать</button>
-</template>
-<template id="transit-lease">
-    <div class="modal__title"><span>Покупка в лизинг</span> в пути</div>
-    <div class="modal-table">
-        <div class="modal-table__row">
-            <div class="modal-table__row--left">
-                <p class="modal-table__term">Первый взнос</p>
-            </div>
-            <div class="modal-table__row--right">
-                <p class="modal-table__definition">от&nbsp;1&nbsp;085&nbsp;000&nbsp;руб.</p>
-            </div>
-        </div>
-        <div class="modal-table__row">
-            <div class="modal-table__row--left">
-                <p class="modal-table__term">Ежемесячный платеж</p>
-            </div>
-            <div class="modal-table__row--right">
-                <p class="modal-table__definition">215&nbsp;000&nbsp;руб. до&nbsp;603&nbsp;000&nbsp;руб.</p>
-            </div>
-        </div>
-        <div class="modal-table__row">
-            <div class="modal-table__row--left">
-                <p class="modal-table__term">КАСКО в&nbsp;%&nbsp;от&nbsp;стоимости автомобиля</p>
-            </div>
-            <div class="modal-table__row--right">
-                <p class="modal-table__definition">от&nbsp;4%</p>
-            </div>
-        </div>
-        <div class="modal-table__row">
-            <div class="modal-table__row--left">
-                <p class="modal-table__term">Экономия на налогах</p>
-            </div>
-            <div class="modal-table__row--right">
-                <p class="modal-table__definition">до&nbsp;3&nbsp;978&nbsp;333&nbsp;руб.</p>
-            </div>
-        </div>
-        <div class="modal-table__row">
-            <div class="modal-table__row--left">
-                <p class="modal-table__term">Итоговая стоимость после вычета налогов</p>
-            </div>
-            <div class="modal-table__row--right">
-                <p class="modal-table__definition">6&nbsp;871&nbsp;667&nbsp;руб.</p>
-            </div>
-        </div>
-        <div class="modal-table__row">
-            <div class="modal-table__row--left">
-                <p class="modal-table__term">Дополнительная экономия на НДФЛ</p>
-            </div>
-            <div class="modal-table__row--right">
-                <p class="modal-table__definition">1&nbsp;131&nbsp;000&nbsp;руб.</p>
-            </div>
-        </div>
-        <div class="modal-table__row">
-            <div class="modal-table__row--left">
-                <p class="modal-table__term">Лизинговые компании-партнеры</p>
-            </div>
-            <div class="modal-table__row--right">
-                <p class="modal-table__definition">Каркаде, Европлан, ВТБ, Ресо и др.</p>
-            </div>
-        </div>
-    </div>
-    <button type="button" class="modal__button base-button base-button--filled js-open-modal" data-modal="form">Выбрать</button>
-</template>
-<template id="transit-loan">
-    <div class="modal__title"><span>Покупка в кредит</span> в пути</div>
-    <div class="modal-table">
-        <div class="modal-table__row">
-            <div class="modal-table__row--left">
-                <p class="modal-table__term">Первый взнос</p>
-            </div>
-            <div class="modal-table__row--right">
-                <p class="modal-table__definition">от&nbsp;1&nbsp;085&nbsp;000&nbsp;руб.</p>
-            </div>
-        </div>
-        <div class="modal-table__row">
-            <div class="modal-table__row--left">
-                <p class="modal-table__term">Ежемесячный платеж</p>
-            </div>
-            <div class="modal-table__row--right">
-                <p class="modal-table__definition">215&nbsp;000&nbsp;руб. до&nbsp;603&nbsp;000&nbsp;руб.</p>
-            </div>
-        </div>
-        <div class="modal-table__row">
-            <div class="modal-table__row--left">
-                <p class="modal-table__term">КАСКО в&nbsp;%&nbsp;от&nbsp;стоимости автомобиля</p>
-            </div>
-            <div class="modal-table__row--right">
-                <p class="modal-table__definition">от&nbsp;4%</p>
-            </div>
-        </div>
-        <div class="modal-table__row">
-            <div class="modal-table__row--left">
-                <p class="modal-table__term">Экономия на налогах</p>
-            </div>
-            <div class="modal-table__row--right">
-                <p class="modal-table__definition">до&nbsp;3&nbsp;978&nbsp;333&nbsp;руб.</p>
-            </div>
-        </div>
-        <div class="modal-table__row">
-            <div class="modal-table__row--left">
-                <p class="modal-table__term">Итоговая стоимость после вычета налогов</p>
-            </div>
-            <div class="modal-table__row--right">
-                <p class="modal-table__definition">6&nbsp;871&nbsp;667&nbsp;руб.</p>
-            </div>
-        </div>
-        <div class="modal-table__row">
-            <div class="modal-table__row--left">
-                <p class="modal-table__term">Дополнительная экономия на НДФЛ</p>
-            </div>
-            <div class="modal-table__row--right">
-                <p class="modal-table__definition">1&nbsp;131&nbsp;000&nbsp;руб.</p>
-            </div>
-        </div>
-        <div class="modal-table__row">
-            <div class="modal-table__row--left">
-                <p class="modal-table__term">Лизинговые компании-партнеры</p>
-            </div>
-            <div class="modal-table__row--right">
-                <p class="modal-table__definition">Каркаде, Европлан, ВТБ, Ресо и др.</p>
-            </div>
-        </div>
-    </div>
-    <button type="button" class="modal__button base-button base-button--filled js-open-modal" data-modal="form">Выбрать</button>
-</template>
-<template id="stock-lease">
-    <div class="modal__title"><span>Покупка в лизинг</span> в наличии</div>
-    <div class="modal-table">
-        <div class="modal-table__row">
-            <div class="modal-table__row--left">
-                <p class="modal-table__term">Первый взнос</p>
-            </div>
-            <div class="modal-table__row--right">
-                <p class="modal-table__definition">от&nbsp;1&nbsp;085&nbsp;000&nbsp;руб.</p>
-            </div>
-        </div>
-        <div class="modal-table__row">
-            <div class="modal-table__row--left">
-                <p class="modal-table__term">Ежемесячный платеж</p>
-            </div>
-            <div class="modal-table__row--right">
-                <p class="modal-table__definition">215&nbsp;000&nbsp;руб. до&nbsp;603&nbsp;000&nbsp;руб.</p>
-            </div>
-        </div>
-        <div class="modal-table__row">
-            <div class="modal-table__row--left">
-                <p class="modal-table__term">КАСКО в&nbsp;%&nbsp;от&nbsp;стоимости автомобиля</p>
-            </div>
-            <div class="modal-table__row--right">
-                <p class="modal-table__definition">от&nbsp;4%</p>
-            </div>
-        </div>
-        <div class="modal-table__row">
-            <div class="modal-table__row--left">
-                <p class="modal-table__term">Экономия на налогах</p>
-            </div>
-            <div class="modal-table__row--right">
-                <p class="modal-table__definition">до&nbsp;3&nbsp;978&nbsp;333&nbsp;руб.</p>
-            </div>
-        </div>
-        <div class="modal-table__row">
-            <div class="modal-table__row--left">
-                <p class="modal-table__term">Итоговая стоимость после вычета налогов</p>
-            </div>
-            <div class="modal-table__row--right">
-                <p class="modal-table__definition">6&nbsp;871&nbsp;667&nbsp;руб.</p>
-            </div>
-        </div>
-        <div class="modal-table__row">
-            <div class="modal-table__row--left">
-                <p class="modal-table__term">Дополнительная экономия на НДФЛ</p>
-            </div>
-            <div class="modal-table__row--right">
-                <p class="modal-table__definition">1&nbsp;131&nbsp;000&nbsp;руб.</p>
-            </div>
-        </div>
-        <div class="modal-table__row">
-            <div class="modal-table__row--left">
-                <p class="modal-table__term">Лизинговые компании-партнеры</p>
-            </div>
-            <div class="modal-table__row--right">
-                <p class="modal-table__definition">Каркаде, Европлан, ВТБ, Ресо и др.</p>
-            </div>
-        </div>
-    </div>
-    <button type="button" class="modal__button base-button base-button--filled js-open-modal" data-modal="form">Выбрать</button>
-</template>
-<template id="stock-loan">
-    <div class="modal__title"><span>Покупка в кредит</span> в наличии</div>
-    <div class="modal-table">
-        <div class="modal-table__row">
-            <div class="modal-table__row--left">
-                <p class="modal-table__term">Первый взнос</p>
-            </div>
-            <div class="modal-table__row--right">
-                <p class="modal-table__definition">от&nbsp;1&nbsp;085&nbsp;000&nbsp;руб.</p>
-            </div>
-        </div>
-        <div class="modal-table__row">
-            <div class="modal-table__row--left">
-                <p class="modal-table__term">Ежемесячный платеж</p>
-            </div>
-            <div class="modal-table__row--right">
-                <p class="modal-table__definition">215&nbsp;000&nbsp;руб. до&nbsp;603&nbsp;000&nbsp;руб.</p>
-            </div>
-        </div>
-        <div class="modal-table__row">
-            <div class="modal-table__row--left">
-                <p class="modal-table__term">КАСКО в&nbsp;%&nbsp;от&nbsp;стоимости автомобиля</p>
-            </div>
-            <div class="modal-table__row--right">
-                <p class="modal-table__definition">от&nbsp;4%</p>
-            </div>
-        </div>
-        <div class="modal-table__row">
-            <div class="modal-table__row--left">
-                <p class="modal-table__term">Экономия на налогах</p>
-            </div>
-            <div class="modal-table__row--right">
-                <p class="modal-table__definition">до&nbsp;3&nbsp;978&nbsp;333&nbsp;руб.</p>
-            </div>
-        </div>
-        <div class="modal-table__row">
-            <div class="modal-table__row--left">
-                <p class="modal-table__term">Итоговая стоимость после вычета налогов</p>
-            </div>
-            <div class="modal-table__row--right">
-                <p class="modal-table__definition">6&nbsp;871&nbsp;667&nbsp;руб.</p>
-            </div>
-        </div>
-        <div class="modal-table__row">
-            <div class="modal-table__row--left">
-                <p class="modal-table__term">Дополнительная экономия на НДФЛ</p>
-            </div>
-            <div class="modal-table__row--right">
-                <p class="modal-table__definition">1&nbsp;131&nbsp;000&nbsp;руб.</p>
-            </div>
-        </div>
-        <div class="modal-table__row">
-            <div class="modal-table__row--left">
-                <p class="modal-table__term">Лизинговые компании-партнеры</p>
-            </div>
-            <div class="modal-table__row--right">
-                <p class="modal-table__definition">Каркаде, Европлан, ВТБ, Ресо и др.</p>
-            </div>
-        </div>
-    </div>
-    <button type="button" class="modal__button base-button base-button--filled js-open-modal" data-modal="form">Выбрать</button>
-</template>
-<template id="data">
-    <div class="modal__title"><span>Политика обработки персональных данных</span> ООО «Нео Карс»</div>
-    <div class="modal__longread">
-        <p>Настоящий документ определяет политику ООО «ИнфоПуш» (далее Компания) в отношении обработки и защиты персональных данных.</p>
-        <p>Общие положения</p>
-        <p>Политика определяет общие принципы и порядок обработки персональных данных и меры по обеспечению их безопасности в БонусПлюс. Целью Политики является обеспечение защиты прав и свобод человека и гражданина при обработке его персональных данных, а также соблюдение требований российского законодательства в области персональных данных.</p>
-        <p>Политика разработана в соответствии с положениями Конституции Российской Федерации, Федерального закона от 27.07.2006 № 152-ФЗ «О персональных данных», других нормативных актов.</p>
-        <p>В Политике используются следующие термины и определения:</p>
-        <p>Персональные данные - любая информация, относящаяся к прямо или косвенно определенному, или определяемому физическому лицу (субъекту персональных данных);</p>
-        <p>Персональные данные работника – любая информация, относящиеся к конкретному работнику и его деловым (профессиональным и личностным) качествам, обрабатываемая Компанией в связи с осуществлением трудовой функции работника в установленных законодательством целях.</p>
-        <p>Субъект персональных данных – физическое лицо, персональные данные которого обрабатывается Компанией.</p>
-        <p>Обработка персональных данных – любое действие (операция) или совокупность действий (операций), совершаемых с использованием средств автоматизации или без использования таких средств с персональными данными, включая сбор, запись, систематизацию, накопление, хранение, уточнение (обновление, изменение), извлечение, использование, передачу (распространение, предоставление, доступ), обезличивание, блокирование, удаление, уничтожение персональных данных;</p>
-        <p>Обезличивание персональных данных(уничтожение) – действия, в результате которых становится невозможным определить принадлежность персональных данных конкретному субъекту персональных данных;</p>
-        <p>Автоматизированная обработка персональных данных – обработка персональных данных с помощью средств вычислительной техники;</p>
-    </div>
-</template>
+
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.inputmask/5.0.8/inputmask.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.12/jquery.mask.min.js"></script>
 <script src="assets/js/main.js"></script>
 </body>
 </html>
